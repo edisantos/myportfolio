@@ -1,0 +1,183 @@
+:root {
+    --cor-banner: #434343;
+    --cor-itens: #FFF;
+}
+
+body,
+html {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+.container-principal {
+    max-width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: var(--cor-banner);
+
+}
+
+
+
+
+.banner {
+    max-width: 100%;
+    min-width: 40%;
+    margin: 0 auto;
+    height: 40vw;
+    background-color: var(--cor-banner);
+    display: grid;
+    grid-template-areas:
+        "minha-descricao minha-imagem";
+
+}
+
+.minha-descricao {
+    max-width: 100%;
+    height: 40vw;
+    grid-area: "minha-descricao";
+    grid-row: minha-descricao;
+
+}
+
+.minha-descricao h1 {
+    text-align: center;
+    margin: auto;
+    color: #fff;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    padding-top: 5%;
+    font-size: 6vw;
+}
+
+.minha-descricao p {
+    padding: 1%;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1vw;
+
+
+}
+
+.minha-imagem {
+    max-width: 100%;
+    height: 40vw;
+    grid-area: "minha-imagem";
+    grid-row: minha-descricao;
+
+    padding: auto;
+
+
+}
+
+.minha-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+
+
+}
+
+/*Meus conhecimentos*/
+.meus-conhecimentos {
+    max-width: 100%;
+    height: 30vw;
+    background-color: #084d6e;
+
+}
+
+.meus-conhecimentos h1 {
+    color: #fff;
+    padding: 1%;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.itens {
+    max-width: 100%;
+    height: 30vw;
+    background-color: #084d6e;
+    display: grid;
+    grid-template-areas:
+        "itens itens itens";
+    margin: 0 auto;
+    grid-gap: 20px;
+    padding: 20px
+}
+
+.card {
+    width: 100%;
+    height: 20vw;
+    background-color: var(--cor-banner);
+    grid-area: "itens";
+    grid-row: itens;
+    border-radius: 10px;
+    padding-top: 1%;
+
+
+}
+
+.card ul {
+    list-style: none;
+}
+
+
+.card h3 {
+    color: #084d6e;
+}
+
+footer {
+    max-width: 100%;
+    height: 15vw;
+    background-color: var(--cor-banner);
+    color: #FFF;
+    padding: 2%;
+
+
+}
+
+/*Portfolio*/
+.banner-projetos {
+    max-width: 100%;
+    min-width: 40%;
+    margin: 0 auto;
+    height: 10vw;
+    background-color: var(--cor-banner);
+
+}
+
+.banner-projetos h1 {
+    color: #FFF;
+    padding: 1%;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    text-align: center;
+    font-size: 6em;
+
+}
+
+.container-projetos {
+    border: 1px solid #FFF;
+    max-width: 90%;
+    margin: 0 auto;
+    height: 40vw;
+    background-color: var(--cor-banner);
+    display: grid;
+    grid-template-areas:
+        "item-projeto-title item-projeto-img";
+    border-radius: 50px 10px 50px 10px;
+
+}
+
+.item-projeto-title {
+    max-width: 100%;
+    padding: 2%;
+    color: #FFF;
+}
+
+.item-projeto-img {
+    max-width: 100%;
+}
